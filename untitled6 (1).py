@@ -33,15 +33,16 @@ print("Sucesso")
 """Faça programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações"""
 
 usuario = (input("digite senha de usuario: "))
-print("nome de usuario incorreto")
+print("senha de usuario incorreto")
 senha = ("digite uma senha de 8 caracteres: ")
 print("erro, senha nao pode ser mesma que o nome de usuario")
 
 """Escreva um programa que conte de 1 a 10 e imprima cada número"""
 
 numero = int(input("digite um numero de zero a dez: "))
-print("0,1,2,3,4,5,6,7,8,9,10: ")
-int(input("digite"))
+contador = 1
+int(input("digite  o numero novamente: "))
+print("0,1,2,3,4,5,6,7,8,9,10")
 
 """Escreva um programa que solicite ao usuário que insira um número e, em
 seguida, imprima todos os números de 1 até esse número.
@@ -57,7 +58,7 @@ while nota > 10 or nota < 0:
 seguida, imprima todos os números pares de 2 até esse número.
 """
 
-numero = int(input("Escreva um numero que solicite ao usuario e em seguida imprima todos os numeros de 1 ate esse numero: "))
+numero = int(input("Escreva um numero que solicite ao usuario e em seguida imprima todos os numeros de 2 ate esse numero: "))
 numero = ("numero escolhido e 10: ")
 print("0,2,4,6,8,10: ")
 while nota > 10 or nota < 0:
@@ -105,3 +106,13 @@ print("resultados das contas abaixo 10,15,20,25: ")
 insira o número 0. Em seguida, imprima a soma de todos os números inseridos.
 """
 
+maior_numero = 0
+numero = float(input("Insira um número: "))
+while numero >= 0:
+    numero = float(input("Insira outro numero: "))
+    if numero < 0:
+     break
+    elif numero > maior_numero:
+      maior_numero = numero
+print("O numero insirido é um numero negativo")
+print(f"O maior número inserido é: {maior_numero}")
